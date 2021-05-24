@@ -1,8 +1,9 @@
-import React from 'react';
-import { Grid } from '@material-ui/core';
+import React, { useState } from 'react';
+import { Grid, CssBaseline, Paper, Stepper, Step, StepLabel, Typography, CircularProgress, Divider, Button } from '@material-ui/core';
 
 import Product from './Product/Product';
 import useStyles from './styles';
+
 
 const Products = ({ products, onAddToCart }) => {
     const classes = useStyles();
